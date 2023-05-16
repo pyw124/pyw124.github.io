@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+			Site Maintenance
+		</title>
+		<style media="screen" type="text/css">
+		  html {
+		          height:100%;
+		  }
+		  body {
+		          color: #fff; 
+		          margin: 0;
+		          font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+		          font-style: normal;
+		          font-size: 14px;
+		          line-height: 22px;
+		          height: 100%; 
+		          background-color: #fff;
+		  }
+		  p {
+		          margin: 0;
+		  }
+		  img {
+		      filter: brightness(0) invert(1);
+		  }
+		  h1 {
+		          margin-top: 20px;
+		          font-size: 60px;
+		          opacity: 1;
+		  }
+		  .under-construction p {
+		          font-size: 40px;
+		  }
+		  @media all and (max-width: 1080px) {
+		          h1 {
+		                  font-size: 48px;
+		          }
+		          .under-construction p {
+		                  font-size: 36px;
+		          }
+		  }
+		  @media all and (max-width: 980px) {
+		          h1 {
+		                  font-size: 36px;
+		          }
+		          .under-construction p {
+		                  font-size: 24px;
+		          }
+		  }
+		  @media all and (max-width: 767px) {
+		          h1 {
+		                  font-size: 28px;
+		          }
+		          .under-construction p {
+		                  font-size: 16px;
+		          }
+		  }
+		  .wrap {
+		          height: auto; 
+		          min-height: 100%; 
+		          background-color: #3B4251;
+		  }
+		  .domain {
+		          position: absolute; 
+		          text-align: center; 
+		          width: 100%; 
+		          margin-left: -50%; 
+		          top: 32.5%;
+		          left: 50%;
+		  }
+		  .logo {
+		      margin: 50px;
+		      max-width: 40px;
+		  }
+		  .under-construction {
+		      font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+		      position: absolute; 
+		      text-align: center; 
+		      width: 100%; 
+			  top: 45%;
+		      line-height: 1.5;   
+		      font-weight: 300;
+		  }
+
+
+		</style>
+	</head>
+	<body>
+		<div class="wrap" id="wrap-bg">
+			<a href="#"><img class="logo" src="parking.png" alt="logo"></a>
+			<div class="domain">
+				<h1 id="site_domain">
+					MYDOMAIN.COM
+				</h1>
+			</div>
+			<div class="under-construction">
+<p>
+	Sorry for the inconvenience.
+</p>
+<p>
+	We’re performing some maintenance at the moment.
+</p>
+<p>
+	If you need to you can always contact us.
+</p>
+<p>
+	We’ll be back online shortly!
+</p>
+
+			</div>
+		</div>
+		<script>
+
+		function random_bg_color() {
+		var bgColor = "rgb(47, 65, 218)";  
+		document.getElementById("wrap-bg").style.background = bgColor;
+		}
+
+		random_bg_color();
+
+		if(window.location.hostname.length > 0 && !(/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(window.location.hostname)) ){
+		document.getElementById("site_domain").innerHTML = window.location.hostname.toUpperCase();
+		}
+		</script>
+	</body>
+</html>
